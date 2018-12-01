@@ -5,22 +5,22 @@ import Head from "../components/head";
 import { Col } from "antd";
 
 import Intro from "../components/intro/intro";
-import BlogPosts from "../components/blog-posts/blog-posts";
+import BlogDetails from "../components/blog-details/blog-details";
 
-class Index extends React.PureComponent {
+class Post extends React.PureComponent {
   render() {
     return (
       <React.Fragment>
-        <Head title="Blog of Tu" />
+        <Head title="Ultimate React Develop 3 in 1" />
         <Col lg={6}>
           <Intro />
         </Col>
         <Col lg={18}>
-          <BlogPosts />
+          <BlogDetails />
         </Col>
       </React.Fragment>
     );
   }
 }
 
-export default Index;
+export default Post;

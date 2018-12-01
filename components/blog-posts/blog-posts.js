@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import "./blog-posts.scss";
 
@@ -9,18 +10,23 @@ class BlogPosts extends React.PureComponent {
   render() {
     return (
       <div className="blog-posts">
-        <Card
-          hoverable
-          className="element"
-          cover={
-            <img
-              alt="example"
-              src="https://mrhmt.com/assets/img/react-ultimate.jpg"
+        <Link prefetch href="/post">
+          <Card
+            hoverable
+            className="element"
+            cover={
+              <img
+                alt="example"
+                src="https://mrhmt.com/assets/img/react-ultimate.jpg"
+              />
+            }
+          >
+            <Meta
+              title="Ultimate React Develop 3 in 1"
+              description="Recently, in the SWD course at my university, the final project was to create a..."
             />
-          }
-        >
-          <Meta title="Ultimate React Develop 3 in 1" description="Recently, in the SWD course at my university, the final project was to create a..." />
-        </Card>
+          </Card>
+        </Link>
         <Card
           hoverable
           className="element"
@@ -31,7 +37,10 @@ class BlogPosts extends React.PureComponent {
             />
           }
         >
-          <Meta title="Back to office from OJT days" description="Finally, after long days throwing resume on LinkedIn, scheduled to interview in a few places,..." />
+          <Meta
+            title="Back to office from OJT days"
+            description="Finally, after long days throwing resume on LinkedIn, scheduled to interview in a few places,..."
+          />
         </Card>
       </div>
     );

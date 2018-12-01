@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 import "./intro.scss";
 import { Avatar, Icon } from "antd";
@@ -7,13 +8,15 @@ class Intro extends React.PureComponent {
   render() {
     return (
       <div className="intro">
-        <Avatar
-          size={200}
-          className="avatar"
-          src={
-            "https://cdn-images-1.medium.com/max/500/1*vHUiXvBE0p0fLRwFHZuAYw.gif"
-          }
-        />
+        <Link prefetch href="/">
+          <Avatar
+            size={200}
+            className="avatar"
+            src={
+              "https://cdn-images-1.medium.com/max/500/1*vHUiXvBE0p0fLRwFHZuAYw.gif"
+            }
+          />
+        </Link>
         <h1 className="name">Tu Blog</h1>
         <p className="description">Frontend Engineer</p>
         <div className="social-links">
