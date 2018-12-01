@@ -1,0 +1,59 @@
+.intro {
+  padding: 0 1rem;
+  background: #fff;
+  color: #444;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+
+  @media (min-width: 991px) {
+    position: fixed;
+    top: 0;
+    width: 25%;
+    height: 100vh;
+    text-align: left;
+    border-right: 1px #eee solid;
+  }
+
+  .avatar {
+    margin-top: 0.5rem;
+  }
+
+  .name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0 0;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .social-links {
+    i {
+      font-size: 2rem;
+      margin-right: 0.5rem;
+      color: #ccc;
+    }
+
+    i:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .about {
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .links {
+    margin-top: 1rem;
+
+    .description {
+      font-size: 0.8rem;
+    }
+
+    .dev-icon {
+      width: 40px;
+    }
+  }
+}
