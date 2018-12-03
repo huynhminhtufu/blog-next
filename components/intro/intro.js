@@ -9,13 +9,16 @@ class Intro extends React.PureComponent {
     return (
       <div className="intro">
         <Link prefetch href="/">
-          <Avatar
-            size={200}
-            className="avatar"
-            src={
-              "https://cdn-images-1.medium.com/max/500/1*vHUiXvBE0p0fLRwFHZuAYw.gif"
-            }
-          />
+          <a>
+            <Avatar
+              size={200}
+              className="avatar"
+              shape="square"
+              src={
+                "https://cdn-images-1.medium.com/max/500/1*vHUiXvBE0p0fLRwFHZuAYw.gif"
+              }
+            />
+          </a>
         </Link>
         <h1 className="name">Tu Blog</h1>
         <p className="description">Frontend Engineer</p>
